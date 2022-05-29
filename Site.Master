@@ -17,9 +17,7 @@
 
 </head>
 
-
-
-<body style="background-color:seashell">
+<body class="lol">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -41,26 +39,30 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+       
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:black">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="Default.aspx">TuteeCare</a>
+      <a class="navbar-brand" href="Default.aspx" style="color:white;font:500">TuteeCare</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="Default.aspx">Home</a></li>
-      <li><a href="About.aspx">About</a></li>
+      <li><a href="About.aspx" style="background-color:black;color:white">About</a></li>
     </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="#" style="background-color:black;color:white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
-
+           
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
+            
+            <br />
+            
+          
+            <footer >
                <p style="text-align:center">&copy; <%: DateTime.Now.Year %> - TuteeCare</p>
             </footer>
         </div>

@@ -3,29 +3,40 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
 <style>
-    
+
+
+    body {
+        margin:0;
+        padding: 0;
+        background-image:url(https://gcu.edu.pk/Events/images/2021-07-0736736.jpg);
+        background-repeat: no-repeat;
+        background-position-y:50px;
+        background-size:1367px 575px;
+    }
+
+
  .logo{
         margin-left:58%;
         margin-top:8%;
         height:50%;
         width:50%;
+        opacity:1;
  }
- .vl {
+ /*.vl {
   border-left: 2px solid black;
   margin-left:50%;
   top:0;
   position:absolute;
   height: 540px;
- }
+ }*/
 
 </style>
-
+    
     <asp:Image id="logo" cssclass="logo" ImageUrl="~/logo.png" runat="server" />
   
     <div class="vl"></div>
 
-
-    <link href="Login.css" rel="stylesheet"/>
+   <link href="Login.css" rel="stylesheet">
 
     <div class="Student_Login">
    
