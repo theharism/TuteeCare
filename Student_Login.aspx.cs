@@ -9,15 +9,20 @@ namespace WebApplication1
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        protected void Page_Load_Student(object sender, EventArgs e)
+        {
+            Response.Redirect("Student_dashboard.aspx");
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
 
-        protected void Student_Login(object sender, EventArgs e)
+        protected void Student_Redirect(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('Testing');</script>");
+            Response.Redirect("Student_Login.aspx");
         }
 
         protected void Teacher_Redirect(object sender, EventArgs e)
@@ -30,9 +35,6 @@ namespace WebApplication1
             Response.Redirect("Admin_Login.aspx");
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
