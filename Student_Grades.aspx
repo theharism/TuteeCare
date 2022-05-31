@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Student.Master" AutoEventWireup="true" CodeBehind="Student_Grades.aspx.cs" Inherits="WebApplication1.Student_Grades" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Student.Master" AutoEventWireup="true" CodeBehind="Student_Grades.aspx.cs" Inherits="WebApplication1.Student_Grades" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
       <div class="d-flex align-item-center justify-content-center" style="height:100vh;">
