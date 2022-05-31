@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="WebApplication1.Student1" %>
+
+<!doctype html>
+<html lang="en">
+  <head runat="server">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title><%: Page.Title %>TuteeCare | Student </title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <link href="~/logo.png" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css1/Student_Style.css">
+  </head>
+
+  
+
+  <body>
+
+    <style>
+        body{
+            font-weight:bold;
+            text-align:center;
+            color:blue;
+            background-color:yellow;
+        }
+        
+.Submit_Button {
+    border-radius: 20px;
+    margin-left: 20%;
+}
+.Submit_Button:hover {
+        border-color: red;
+        border-width: 2px;
+        color: red;
+    }
+    </style>
+
+    <form runat="server">
+     
+        <div class="row">
+            <div class="col-md-3">
+                <div class="wrapper d-flex align-items-stretch ">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+
+
+				<div class="p-4">
+		  		<h1><a href="Student_dashboard.aspx" class="logo">STUDENT <span>Student Controls</span></a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="Student_Dashboard.aspx"><span class="fa fa-home mr-3"></span> Dashboard</a>
+	          </li>
+                <li>
+              <a href="Student_Add_Course.aspx"><span class="fa fa-plus-circle mr-3"></span>Add/Course</a>
+	          </li>
+               <li>
+              <a href="Student_Drop_Course.aspx"><span class="fa fa-minus-circle mr-3"></span>Drop/Course</a>
+	          </li>
+	          <li>
+	             <a href="Student_Attendance.aspx"><span class="fa fa-book mr-3"></span>Attendance</a>
+	          </li>
+	          <li>
+              <a href="Student_Grades.aspx"><span class="fa fa-briefcase mr-3"></span>Grades</a>
+	          </li>
+	          <li>
+              <a href="Student_Course_View.aspx"><span class="fa fa-book mr-3"></span>Registered Courses</a>
+	          </li>
+	          <li>
+              <a href="Student_Announcements.aspx"><span class="fa fa-pencil-square-o mr-3"></span>Announcements</a>
+	          </li>
+                <li>
+              <a href="Student_Fee.aspx"><span class="fa fa-money mr-3"></span>Fee Status</a>
+	          </li>
+	          <li>
+              <a href="Student_Edit_Details"><span class="fa fa-pencil-square-o mr-3"></span> Edit Details</a>
+	          </li>
+                
+                <li>
+              <a href="Default.aspx"><span class="fa fa-sign-out mr-3"></span> Log Out</a>
+	          </li>
+	        </ul>
+
+	      </div>
+    	</nav>
+              </nav>
+                </div>
+            </div>
+            <div class="col">
+                        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"> 
+
+          <hr />
+      <footer>
+               <p style="text-align:center">&copy; <%: DateTime.Now.Year %> - TuteeCare</p>
+            </footer>
+            </asp:ContentPlaceHolder>
+        </div>
+            </div>
+            
+        </div>
+        
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+        </form>
+ 
+  </body>
+</html>
+
