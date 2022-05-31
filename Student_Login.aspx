@@ -29,29 +29,15 @@
     <div class="Student_Login">
         
      <h2>STUDENT LOGIN</h2> 
-       <div style="color:red"> 
+      
             <asp:Label ID="Label1" runat="server" Text="Email" CssClass="email"></asp:Label>
       
-        <ASP:RequiredFieldValidator ControlToValidate="TextBox1"
-            Display="Static" ErrorMessage="*" runat="server"
-            ID="vUserName" />
-        </div>
         <asp:TextBox ID="TextBox1" runat="server" Placeholder="Enter Email" CssClass="txtemail" ></asp:TextBox>
         
-        
-          <div style="color:red"> 
-        <asp:Label ID="Label2" runat="server" Text="Password" CssClass="pass"></asp:Label>
-            
-         <ASP:RequiredFieldValidator ControlToValidate="TextBox2"
-        Display="Static" ErrorMessage="*" runat="server"
-        ID="vUserPass" />
-
-              </div>
-
-        <asp:TextBox ID="TextBox2" runat="server" placeholder="********" CssClass="txtpass"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" placeholder="********" CssClass="txtpass" TextMode="Password"></asp:TextBox>
             
        
-        <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="txtbutton" OnClick="Student_Login" />
+        <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="txtbutton" OnClick="SIGNIN" />
 
             <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btnforget">Forgot Password</asp:LinkButton>
         <br /><br />

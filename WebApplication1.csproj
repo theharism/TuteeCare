@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -44,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -139,11 +146,23 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.css" />
+    <Content Include="Student_Add_Course.aspx" />
+    <Content Include="Student_Announcements.aspx" />
+    <Content Include="Student_Attendance.aspx" />
+    <Content Include="Student_Course_View.aspx" />
+    <Content Include="Student_dashboard.aspx" />
+    <Content Include="Student_Drop_Course.aspx" />
+    <Content Include="Student_Edit_Details.aspx" />
+    <Content Include="Student_Fee.aspx" />
+    <Content Include="Student_Grades.aspx" />
     <Content Include="Student_Login.aspx" />
+    <Content Include="S_Attendance.aspx" />
+    <Content Include="S_Grades.aspx" />
     <Content Include="Teacher_Login.aspx" />
     <Content Include="Admin_Login.aspx" />
     <Content Include="Admin_Home.aspx" />
     <Content Include="WebForm5.aspx" />
+    <None Include="Properties\PublishProfiles\TuteeCare - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -320,6 +339,90 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Add_Course.aspx.cs">
+      <DependentUpon>Student_Add_Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Add_Course.aspx.designer.cs">
+      <DependentUpon>Student_Add_Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Announcements.aspx.cs">
+      <DependentUpon>Student_Announcements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Announcements.aspx.designer.cs">
+      <DependentUpon>Student_Announcements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Attendance.aspx.cs">
+      <DependentUpon>Student_Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Attendance.aspx.designer.cs">
+      <DependentUpon>Student_Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Course_View.aspx.cs">
+      <DependentUpon>Student_Course_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Course_View.aspx.designer.cs">
+      <DependentUpon>Student_Course_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_dashboard.aspx.cs">
+      <DependentUpon>Student_dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_dashboard.aspx.designer.cs">
+      <DependentUpon>Student_dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Drop_Course.aspx.cs">
+      <DependentUpon>Student_Drop_Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Drop_Course.aspx.designer.cs">
+      <DependentUpon>Student_Drop_Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Edit_Details.aspx.cs">
+      <DependentUpon>Student_Edit_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Edit_Details.aspx.designer.cs">
+      <DependentUpon>Student_Edit_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Fee.aspx.cs">
+      <DependentUpon>Student_Fee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Fee.aspx.designer.cs">
+      <DependentUpon>Student_Fee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Grades.aspx.cs">
+      <DependentUpon>Student_Grades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Grades.aspx.designer.cs">
+      <DependentUpon>Student_Grades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="S_Attendance.aspx.cs">
+      <DependentUpon>S_Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="S_Attendance.aspx.designer.cs">
+      <DependentUpon>S_Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="S_Grades.aspx.cs">
+      <DependentUpon>S_Grades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="S_Grades.aspx.designer.cs">
+      <DependentUpon>S_Grades.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Update_Fees.aspx.cs">
       <DependentUpon>Update_Fees.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -378,6 +481,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Admin.Master" />
+    <Content Include="Student.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -415,7 +519,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

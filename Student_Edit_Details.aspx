@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Admin_Edit_Profile.aspx.cs" Inherits="WebApplication1.Admin_Edit_Profile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Student.Master" AutoEventWireup="true" CodeBehind="Student_Edit_Details.aspx.cs" Inherits="WebApplication1.Student_Edit_Details" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="d-flex align-item-center justify-content-center" style="height:100vh;">
+        <div class="d-flex align-item-center justify-content-center" style="height:100vh;">
             <div style="margin-block:auto">
 
     <div>
@@ -17,11 +17,13 @@
          &nbsp;
         <asp:TextBox ID="TextBox8" runat="server" Placeholder="Enter New Password" AutoComplete="off"></asp:TextBox>
         <br /><br />
-        <asp:Button ID="Button1" runat="server" Text="Change Password" cssclass="Submit_Button" OnClientClick="javascript:Check();" OnClick="Button1_Click"/>
+        <asp:Button ID="Button1" runat="server" Text="Change Password" cssclass="Submit_Button" OnClick="Button1_Click"/>
         
     </div>
 
     </div>
         </div>
+
+   
 
 </asp:Content>

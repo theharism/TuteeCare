@@ -48,7 +48,7 @@
         border-color: red;
         border-width: 2px;
         color: red;
-    }
+}
     </style>
 
     <form runat="server">

@@ -12,12 +12,7 @@ namespace WebApplication1
 
         protected void SignIn(object sender, EventArgs e)
         {
-            Response.Redirect("Admin_Home.aspx");
-        }
-
-        protected void Student_Redirect(object sender, EventArgs e)
-        {
-            Response.Redirect("Student_Login.aspx");
+            Response.Redirect("Student_dashboard.aspx");
         }
 
         protected void Teacher_Redirect(object sender, EventArgs e)

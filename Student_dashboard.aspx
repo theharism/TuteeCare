@@ -1,7 +1,8 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Admin_Home.aspx.cs" Inherits="WebApplication1.WebForm4" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Student.Master" AutoEventWireup="true" CodeBehind="Student_dashboard.aspx.cs" Inherits="WebApplication1.Student_dashboard" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <style>
+
+        <style>
 
         .home{
             font-weight:normal;
@@ -19,7 +20,9 @@
         }
 
     </style>
+
     <asp:LoginName ID="LoginName1" runat="server" Font-Bold = "true" />
+
     <div class="d-flex align-item-center justify-content-center" style="height:100vh;">
             <div style="margin-block:auto">
         <asp:Label ID="Label1" runat="server" CssClass="home1" Text="Full Name:"></asp:Label>
@@ -31,7 +34,7 @@
         <asp:Label ID="Label4" runat="server" CssClass="home" Text=""></asp:Label>
     <br /><br />
 
-        <asp:Label ID="Label5" runat="server"  CssClass="home1" Text="Admin ID:"></asp:Label>
+        <asp:Label ID="Label5" runat="server"  CssClass="home1" Text="Roll No:"></asp:Label>
         &nbsp;
         <asp:Label ID="Label6" runat="server" CssClass="home" Text=""></asp:Label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -51,5 +54,7 @@
 
     </div>
     </div>
-   
+
+
+
 </asp:Content>
