@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="WebApplication1.Student1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Teacher.master.cs" Inherits="WebApplication1.Teacher" %>
+
 
 <!doctype html>
 <html lang="en">
@@ -7,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title><%: Page.Title %>TuteeCare | Student</title>
+    <title><%: Page.Title %>TuteeCare | Teacher</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -60,34 +61,31 @@
 
 
 				<div class="p-4">
-		  		<h1><a href="Student_dashboard.aspx" class="logo">STUDENT <span>Student Controls</span></a></h1>
+		  		<h1><a href="Teacher_dashboard.aspx" class="logo">Teacher<span>Teacher Controls</span></a></h1>
 	        <ul class="list-unstyled components mb-5">
 	          <li class="active">
-	            <a href="Student_Dashboard.aspx"><span class="fa fa-home mr-3"></span>Home</a>
+	            <a href="Teacher_Dashboard.aspx"><span class="fa fa-home mr-3"></span>Home</a>
 	          </li>
                  <li>
-              <a href="Student_Edit_Details"><span class="fa fa-pencil-square-o mr-3"></span> Edit Details</a>
+              <a href="Teacher_Edit_Details"><span class="fa fa-pencil-square-o mr-3"></span> Edit Details</a>
 	          </li>
                 <li>
-              <a href="Student_Add_Course.aspx"><span class="fa fa-plus-circle mr-3"></span>Add Course</a>
+              <a href="Teacher_Add_Course.aspx"><span class="fa fa-plus-circle mr-3"></span>Opt Course</a>
 	          </li>
                <li>
-              <a href="Student_Drop_Course.aspx"><span class="fa fa-minus-circle mr-3"></span>Drop Course</a>
+              <a href="Teacher_Drop_Course.aspx"><span class="fa fa-minus-circle mr-3"></span>Drop Course</a>
 	          </li>
 	          <li>
-	             <a href="Student_Attendance.aspx"><span class="fa fa-book mr-3"></span>Attendance</a>
+	             <a href="Teacher_Add_Attendance.aspx"><span class="fa fa-book mr-3"></span>Add Attendance</a>
 	          </li>
 	          <li>
-              <a href="Student_Grades.aspx"><span class="fa fa-briefcase mr-3"></span>GradesBook</a>
-	          </li>
-               <li>
-              <a href="Student_Fee.aspx"><span class="fa fa-money mr-3"></span>Fee Status</a>
+              <a href="Teacher_Add_Grades.aspx"><span class="fa fa-briefcase mr-3"></span>Add GradesBook</a>
 	          </li>
 	          <li>
-              <a href="Student_Announcements.aspx"><span class="fa fa-pencil-square-o mr-3"></span>Announcements</a>
+              <a href="Teacher_Add_Announcements.aspx"><span class="fa fa-pencil-square-o mr-3"></span>Add Announcements</a>
 	          </li>
                  <li>
-              <a href="Student_Course_View.aspx"><span class="fa fa-book mr-3"></span>Registered Courses</a>
+              <a href="Teacher_Course_View.aspx"><span class="fa fa-book mr-3"></span>Opted Courses</a>
 	          </li>   
                 <li>
               <a href="Default.aspx"><span class="fa fa-sign-out mr-3"></span> Log Out</a>
@@ -121,4 +119,3 @@
  
   </body>
 </html>
-
