@@ -46,15 +46,15 @@
       
         
         
-        <asp:TextBox ID="TextBox1" runat="server" Placeholder="Enter Email" CssClass="txtemail" ></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Placeholder="Enter Email" CssClass="txtemail" autocomplete="off"></asp:TextBox>
             
         <asp:Label ID="Label2" runat="server" Text="Password" CssClass="pass"></asp:Label>
             
         
-        <asp:TextBox ID="TextBox2" runat="server" placeholder="********" CssClass="txtpass"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" placeholder="********" CssClass="txtpass" AutoComplete="off" TextMode="password"></asp:TextBox>
             
         
-        <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="txtbutton" OnClick="SignIn"/>
+        <asp:Button ID="Button1" runat="server" Text="Sign In" CssClass="txtbutton" OnClick="SIGNIN"/>
             <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btnforget">Forgot Password</asp:LinkButton>
             <br /><br />
             <asp:Button ID="Button2" runat="server" Text="Teacher Sign in" CssClass="txtbutton1" OnClick="Teacher_Redirect"  />

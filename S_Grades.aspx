@@ -33,10 +33,7 @@
         </asp:SqlDataSource>
                      <div class="col">
                         <asp:GridView ID="GridView1" runat="server" class="table table-striped table-bordered" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
-                            <Columns>
-                                <asp:BoundField DataField="Exam Type" HeaderText="Exam Type" SortExpression="Exam Type" />
-                                <asp:BoundField DataField="Result" HeaderText="Result" SortExpression="Result" />
-                            </Columns>
+                            
                            
                             </asp:GridView>
                     </div>

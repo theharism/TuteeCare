@@ -170,6 +170,7 @@
     <Content Include="Admin_Login.aspx" />
     <Content Include="Admin_Home.aspx" />
     <Content Include="T_Attendance.aspx" />
+    <Content Include="T_Grades.aspx" />
     <Content Include="WebForm5.aspx" />
     <None Include="Properties\PublishProfiles\TuteeCare - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -501,6 +502,13 @@
     </Compile>
     <Compile Include="T_Attendance.aspx.designer.cs">
       <DependentUpon>T_Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="T_Grades.aspx.cs">
+      <DependentUpon>T_Grades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="T_Grades.aspx.designer.cs">
+      <DependentUpon>T_Grades.aspx</DependentUpon>
     </Compile>
     <Compile Include="Update_Fees.aspx.cs">
       <DependentUpon>Update_Fees.aspx</DependentUpon>

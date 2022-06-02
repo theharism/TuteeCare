@@ -1,6 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Teacher.Master" AutoEventWireup="true" CodeBehind="T_Attendance.aspx.cs" Inherits="WebApplication1.T_Attendance" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Teacher.Master" AutoEventWireup="true" CodeBehind="T_Grades.aspx.cs" Inherits="WebApplication1.T_Grades" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    
     <script src="Scripts/jquery-1.7.1.js"></script>
 <script language="javascript" type="text/javascript">
     function SelectAllCheckboxes(chk) {
@@ -67,11 +68,34 @@
                                 <asp:BoundField  DataField ="FullName" HeaderText="FullName" SortExpression="FullName" />
                                 <asp:BoundField  DataField="Rollno" HeaderText="Rollno" ReadOnly="True" SortExpression="Rollno" />
                              <asp:TemplateField >
-            <HeaderTemplate>                   
-                    &nbsp;&nbsp; <asp:CheckBox ID="chkCheckAll" runat="server" onclick="javascript:SelectAllCheckboxes(this)" />
-            </HeaderTemplate>
+            
             <ItemTemplate>
-                &nbsp;&nbsp;<asp:CheckBox ID="chkCheck" runat="server" onclick="javascript:CheckedCheckboxes(this)" />
+                A&nbsp;&nbsp;<asp:CheckBox ID="chkCheck" runat="server" onclick="javascript:CheckedCheckboxes(this)" />
+            </ItemTemplate>
+                                 </asp:TemplateField>
+                                <asp:TemplateField >
+                                 <ItemTemplate>
+                B&nbsp;&nbsp;<asp:CheckBox ID="chkCheck1" runat="server" onclick="javascript:CheckedCheckboxes(this)" />
+            </ItemTemplate>
+                                    </asp:TemplateField >
+                                <asp:TemplateField >
+                                 <ItemTemplate>
+                C&nbsp;&nbsp;<asp:CheckBox ID="chkCheck2" runat="server" onclick="javascript:CheckedCheckboxes(this)" />
+            </ItemTemplate>
+                                  </asp:TemplateField >
+                                         <asp:TemplateField >
+                                             <ItemTemplate>
+                D&nbsp;&nbsp;<asp:CheckBox ID="chkCheck3" runat="server" onclick="javascript:CheckedCheckboxes(this)" />
+            </ItemTemplate>
+                                             </asp:TemplateField >
+                                <asp:TemplateField >
+                                 <ItemTemplate>
+                E&nbsp;&nbsp;<asp:CheckBox ID="chkCheck4" runat="server" onclick="javascript:CheckedCheckboxes(this)" />
+            </ItemTemplate>
+                                                 </asp:TemplateField>
+                                                     <asp:TemplateField >
+                                <ItemTemplate>
+                F&nbsp;&nbsp;<asp:CheckBox ID="chkCheck5" runat="server" onclick="javascript:CheckedCheckboxes(this)" />
             </ItemTemplate>
         </asp:TemplateField>
 
@@ -97,5 +121,6 @@
     </center>
       
     </div>
+
 
 </asp:Content>
