@@ -34,9 +34,6 @@ BEGIN
     where T.TeacherID = @TeacherID
 END
 GO
-EXEC TeacherProfile @teacherID = ''
-
-GO
 
 -----Teacher OPT COURSE-----
 
@@ -62,8 +59,6 @@ end
 END
 GO
 
-GO
-
 -----Teacher Drop Course COURSE-----
 
 create PROCEDURE TeacherDropCourse @TeacherID char(8), @CourseID char(8)
@@ -82,7 +77,6 @@ end
 END
 GO
 
-GO
 
 -----AddAnnouncement-----
 
@@ -101,7 +95,6 @@ BEGIN
 END
 GO
 
-GO
 
 -----Add Attendance-----
 
@@ -111,10 +104,9 @@ BEGIN
     INSERT INTO Attendance Values (@rollno,@courseID,getdate() ,@status)
 END
 GO
-EXEC AddAttendance @TeacherID = '', @coursename = '', @attdate = '', @status = '', @session = ''
 
 GO
-drop table GradeBook
+
 -----Add Grades-----
 
 create PROCEDURE AddGrades @rollno char(8), @courseID char(8), @result VARChar(2), @examtype VARCHAR(10) 
@@ -122,9 +114,6 @@ AS
 BEGIN
     INSERT INTO GradeBook VALUES (@rollno,@CourseID,@result)
 END
-GO
-EXEC AddGrades @TeacherID = '', @coursename = '',@result = '', @session = '', @examtype = ''
-
 GO
 
 
@@ -141,9 +130,6 @@ BEGIN
                         where TC.TeacherID = @TeacherID)
 END
 GO
-EXEC RegisteredCoursesView @rollno = '20L-1099'
-
-GO
 
 ----Teacher Profile Edit PROCEDURE-----
 
@@ -159,7 +145,4 @@ if @oldpassword IN (select T.[Password] from Teacher as T where T.TeacherID = @T
   end
   else select 0
 END
-GO
-EXEC TeacherProfileEdit @teacherID = '',@oldpassword = '', @newpassword = '' 
-
 GO

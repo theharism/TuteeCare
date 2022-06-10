@@ -34,12 +34,10 @@ from [Admin] as A
 where A.ADMINID = @AdminID
 END
 GO
-EXEC AdminProfile @adminID = 'Admin123'
 
 
 ----Admin Profile Edit PROCEDURE-----
 
-drop procedure AdminProfileEdit
 create procedure AdminProfileEdit @AdminID char(8),@oldpassword varchar(20), @newpassword varchar(20)
 AS
 BEGIN
@@ -53,8 +51,6 @@ BEGIN
   else select 0
 END
 go
-execute AdminProfileEdit '20L-1099','12345678','0507368998'
-
 
 GO
 
@@ -75,8 +71,6 @@ if NOT exists(select rollno from Student where rollno=@rollno)
     end
 	else select -1
 END
-GO
-EXEC addstudent @FullName = 'Syed Abdul Qayyum',@DOB = '2001-08-09', @Rollno = '20L-0968', @Email = 'l200968@lhr.nu.edu.pk', @Gender = 'M', @Phoneno = '12345678874', @Address = 'Lahore', @Password = '12345678'
 
 GO
 ----------------------ADD TEACHER-------------
@@ -211,7 +205,6 @@ BEGIN
 select 0
 END
 END
-exec updatefees '20L-0968','Paid'
 GO
 
 
@@ -270,9 +263,6 @@ end
 
 end
 GO
-execute EditStudent '','','','','','',''
-
-Go
 
 -------------Edit Teacher--------
 

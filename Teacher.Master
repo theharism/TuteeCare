@@ -14,12 +14,12 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <link href="~/logo.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://tinypic.host/images/2022/06/10/logode80456f3fda248d.png" rel="shortcut icon" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css1/Student_Style.css">
+		<link rel="stylesheet" href="~\Student_Style.css">
   </head>
 
   

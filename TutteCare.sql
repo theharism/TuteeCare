@@ -1,11 +1,3 @@
-use master
-GO
-
-CREATE DATABASE TuteeCare
-GO
-
-USE TuteeCare
-GO
 
 CREATE TABLE Student
 (
@@ -102,19 +94,14 @@ ON UPDATE CASCADE ON DELETE CASCADE,
 Result	char(1)  NOT NULL
 )
 
-insert into Gradebook values ('20L-1099','87654321','A','Quiz')
-
-
 go
 
 create table Fees
 (
 Rollno char(8) foreign key references Student(Rollno)
 ON UPDATE CASCADE ON DELETE CASCADE,
-[Session] varchar(50) foreign key references sessiontable([description])
-ON UPDATE CASCADE ON DELETE CASCADE,	
 [Status] varchar(10) NOT NULL
-primary key (Rollno,[Session])
+primary key (Rollno)
 )
 
 go

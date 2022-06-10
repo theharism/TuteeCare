@@ -124,6 +124,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css2\bootstrap.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="Drop_Course.aspx" />
     <Content Include="Drop_Student.aspx" />
@@ -156,6 +157,7 @@
     <Content Include="Student_Fee.aspx" />
     <Content Include="Student_Grades.aspx" />
     <Content Include="Student_Login.aspx" />
+    <Content Include="Student_Style.css" />
     <Content Include="S_Attendance.aspx" />
     <Content Include="S_Grades.aspx" />
     <Content Include="Teacher_Add_Announcements.aspx" />
@@ -171,7 +173,7 @@
     <Content Include="Admin_Home.aspx" />
     <Content Include="T_Attendance.aspx" />
     <Content Include="T_Grades.aspx" />
-    <Content Include="WebForm5.aspx" />
+    <Content Include="css2\.DS_Store" />
     <None Include="Properties\PublishProfiles\TuteeCare - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -551,13 +553,6 @@
     </Compile>
     <Compile Include="Admin_Home.aspx.designer.cs">
       <DependentUpon>Admin_Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm5.aspx.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm5.aspx.designer.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

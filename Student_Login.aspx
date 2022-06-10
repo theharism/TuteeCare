@@ -7,10 +7,11 @@
     body{
          margin:0;
         padding: 0;
-        background-image:url(https://gcu.edu.pk/Events/images/2021-07-0736736.jpg);
+        background-color:black;
+        /*background-image:url(https://gcu.edu.pk/Events/images/2021-07-0736736.jpg);
         background-repeat: no-repeat;
         background-position-y:50px;
-        background-size:1367px 575px;
+        background-size:1367px 575px;*/
     }
 
  .logo{
@@ -30,7 +31,7 @@
 </style>
 
   
-    <asp:Image id="logo" cssclass="logo" ImageUrl="~/logo.png" runat="server" />
+    <asp:Image id="logo" cssclass="logo" src="https://tinypic.host/images/2022/06/10/logode80456f3fda248d.png" runat="server" />
   
     <div class="vl"></div>
 
@@ -40,10 +41,13 @@
         
      <h2>STUDENT LOGIN</h2> 
       
-            <asp:Label ID="Label1" runat="server" Text="Email" CssClass="email"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Username" CssClass="email"></asp:Label>
       
-        <asp:TextBox ID="TextBox1" runat="server" Placeholder="Enter Email" CssClass="txtemail" autocomplete="off"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Placeholder="Enter Roll no" CssClass="txtemail" autocomplete="off"></asp:TextBox>
         
+            <asp:Label ID="Label2" runat="server" Text="Password" CssClass="email"></asp:Label>
+      
+
         <asp:TextBox ID="TextBox2" runat="server" placeholder="********" CssClass="txtpass" TextMode="Password" AutoComplete="off"></asp:TextBox>
             
        

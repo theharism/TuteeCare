@@ -1,6 +1,4 @@
 
-drop procedure StudentProfile
-
 ----STUDENT LOGIN PROCEDURE-----
 
 create procedure StudentLogin @rollno char(8), @password varchar(20)
@@ -61,7 +59,6 @@ end
 END
 GO
 
-GO
 
 -----DROP COURSE-----
 
@@ -81,8 +78,6 @@ end
 END
 GO
 
-GO
-
 -----ATTENDANCE VIEW-----
 
 create PROCEDURE AttendanceView @rollno char(8), @courseID char(8)
@@ -94,11 +89,7 @@ BEGIN
 END
 GO
 
-GO
-
-
 -----GRADEBOOK VIEW-----
-drop procedure GradeBookView
 create PROCEDURE GradeBookView @rollno char(8), @courseID char(8)
 AS
 BEGIN
@@ -106,8 +97,6 @@ BEGIN
     from GradeBook as GB
     where GB.rollno = @rollno AND GB.courseID = @courseID
 END
-GO
-
 GO
 
 -----View Enrolled-----
@@ -147,7 +136,6 @@ BEGIN
     ORDER BY A.[Date] DESC
 END
 GO
-Exec AnnouncementsView
 
 GO
 
@@ -164,7 +152,6 @@ BEGIN
                         where E.rollno = @rollno)
 END
 GO
-EXEC RegisteredCoursesView @rollno = '20L-1099'
 
 GO
 

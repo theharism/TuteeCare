@@ -32,7 +32,7 @@
 
 </style>
     
-    <asp:Image id="logo" cssclass="logo" ImageUrl="~/logo.png" runat="server" />
+    <asp:Image id="logo" cssclass="logo" src="https://tinypic.host/images/2022/06/10/logode80456f3fda248d.png" runat="server" />
   
     <div class="vl"></div>
 

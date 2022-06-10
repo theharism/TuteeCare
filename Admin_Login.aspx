@@ -6,7 +6,9 @@
 <style>
     
     body{
-        background-color:lightgray;
+        margin:0;
+        padding:0;
+        background-color:black;
     }
 
  .logo{
@@ -15,17 +17,17 @@
         height:50%;
         width:50%;
  }
- .vl {
+ /*.vl {
   border-left: 2px solid black;
   margin-left:50%;
   top:0;
   position:absolute;
   height: 540px;
- }
+ }*/
 
 </style>
 
-    <asp:Image id="logo" cssclass="logo" ImageUrl="~/logo.png" runat="server" />
+    <asp:Image id="logo" cssclass="logo" src="https://tinypic.host/images/2022/06/10/logode80456f3fda248d.png" runat="server" />
   
     <div class="vl"></div>
 

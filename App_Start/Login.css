@@ -1,0 +1,81 @@
+﻿
+.Student_Login
+{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+}
+h2{
+    margin-bottom:35px;
+    padding:0;
+    text-align:center;
+    color:rgb(255,217,9);
+}
+
+.email,.pass{
+    font-weight:bold;
+    color:#fff;
+}
+
+.txtemail,.txtpass,.txtbutton{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.txtemail, .txtpass {
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: rgba(255,255,255, .5);
+}
+
+
+.txtbutton{
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(255, 9, 9);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+
+.txtbutton1 {
+    border: none;
+    outline: none;
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(255, 9, 9);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    margin-left:11px;
+}
+
+ .txtbutton:hover, .txtbutton1:hover {
+        background-color: rgb(255, 217, 9);
+    }
+
+.btnforget {
+font-size:16px;
+font-weight:700;
+text-decoration:none;
+color:#fff;
+}

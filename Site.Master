@@ -13,7 +13,7 @@
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/logo.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://tinypic.host/images/2022/06/10/logode80456f3fda248d.png"  rel="shortcut icon" type="image/x-icon" />
 
 </head>
 
@@ -43,15 +43,15 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:black">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="Default.aspx" style="color:white;font:500">TuteeCare</a>
+      <a class="navbar-brand" href="Default.aspx" style="color:white;font:larger">TuteeCare</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="Default.aspx">Home</a></li>
       <li><a href="About.aspx" style="background-color:black;color:white">About</a></li>
     </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <%--<ul class="nav navbar-nav navbar-right">
       <li><a href="#" style="background-color:black;color:white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
+    </ul>--%>
   </div>
 </nav>
            
@@ -59,9 +59,7 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             
-            <br />
-            
-          
+         
             <footer >
                <p style="text-align:center">&copy; <%: DateTime.Now.Year %> - TuteeCare</p>
             </footer>
